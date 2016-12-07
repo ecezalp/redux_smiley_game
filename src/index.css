@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+div#root {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  margin-top: 32px;
+}
+
+div.default {
+  width: 64px;
+  height: 64px;
+  margin: 12px;
+  display: inline-block;
+  background-color: green;
+}
+
+div.default img {
+  opacity: 0;
+}
+
+div.default:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+div.default:hover img {
+  opacity: 0.4;
+}
+
+div.default.opened {
+  background-color: white;
+}
+div.default.opened img {
+  
