@@ -3,6 +3,7 @@
 // getBinary: transform int to binary string
 // shuffle: array shuffle function
 // numConverter: transform grid coordinates into array placement
+// buttonHelper: array containing button names that correspond to smiley titles in binary
 
 export function getBinary(num) {
   var a = [];
@@ -23,3 +24,7 @@ export function numConverter(x, y) {
   num = (y * 16) + x
   return num
 }
+
+export const buttonHelperEnglish = ["Color", "Eyebrows", "Glasses", "Moustache", "Beard", "Hat", "Tongue", "Piercing"]
+
+export const buttonHelperTurkish = ["Renk", "Kaş", "Gözlük", "Bıyık", "Sakal", "Şapka", "Dil", "Küpe"]
