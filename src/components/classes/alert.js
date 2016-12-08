@@ -11,15 +11,16 @@ export default class Alert extends React.Component {
             time: 5000,
             transition: 'scale'
         }
+        this.message = this.message.bind(this)
     }
 
-    message () {
-        msg.show(this.props.message)
-    }
+    // message () {
+    //     msg.show(this.props.message)
+    // }
 
      render () {
          return (
-             {message()}
+             <h1> TEST </h1>
          )
      }   
 }
