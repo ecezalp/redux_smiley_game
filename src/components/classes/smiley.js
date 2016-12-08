@@ -1,4 +1,5 @@
 import React from 'react'
+import classNameChanger from '../../helpers'
 
 class Smiley extends React.Component {
   constructor (stringId) {

@@ -36,4 +36,5 @@ div.default.opened {
   background-color: white;
 }
 div.default.opened img {
-  
+  opacity: 1;
+}
