@@ -17,3 +17,7 @@ export function createOrderArray () {
       payload: orderArray
   }
 }
+
+//  // dispatch filtering action with passed prop    for button.js
+// dispatch action current smileyID becomes "this"   for smiley. js
+// set target smiley across app    from targetsmiley.js
