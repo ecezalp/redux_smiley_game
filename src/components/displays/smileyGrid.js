@@ -6,23 +6,32 @@ import {connect} from 'react-redux'
 
 import Smiley from '../classes/smiley'
 
-function SmileyGrid (props) {
+class SmileyGrid extends React.Component {
     
-    function allSmileys (props) {
-        debugger
-        props.order.map(index => new Smiley (index))
+    constructor (props) {
+        super(props)
+        this.allSmileys = this.allSmileys.bind(this)
+    }
+    
+    allSmileys () {  
+        debugger   
+        let smileys =  this.props.order.map(index => <Smiley stringId={index}/>)
+        return (
+            smileys
+        )
     }   
 
-    return (
-        <div>
-            {allSmileys()}
-        </div>
-    )
+    render () {
+        return (
+            <div>
+                {this.allSmileys()}
+            </div>
+        )
+    }
 }
 
 function mapStateToProps(state, ownProps){
-  if (state.order) {
-         
+  if (state.order) { 
     let oArray = state.order
     return {order: oArray}
   }

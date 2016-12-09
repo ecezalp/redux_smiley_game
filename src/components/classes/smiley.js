@@ -2,10 +2,11 @@ import React from 'react'
 import classNameChanger from '../../helpers'
 
 class Smiley extends React.Component {
-  constructor (stringId) {
-    super(stringId)
-    this.name = stringId
-    this.image = "../images/" + stringId + ".png"
+  constructor (props) {
+    super(props)
+    debugger
+    this.name = props.stringId
+    this.image = "../images/" + props.stringId + ".png"
     this.status = "default"
     this.clickHander = this.clickHander.bind(this)
   }
@@ -18,8 +19,9 @@ class Smiley extends React.Component {
   render () {
       return (
           <div className={this.status} onClick={()=>this.clickHandler}>
-            {this.image}
+            <img src={this.image} />
           </div>
       )
   }
 }
+
