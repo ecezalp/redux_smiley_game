@@ -1,22 +1,27 @@
 import React from 'react'
-import Smiley from '../components/classes/smiley'
+import Smiley from '../classes/smiley'
 
-export default function targetSmiley () {
+export default function TargetSmiley () {
 
-    function createTargetSmiley () {
-        var num = get_binary(Math.floor(Math.random() * 256));
-        let targetSmiley = new Smiley(num)
-        return targetSmiley
-    }
+    // function createTargetSmiley () {
+    //     var num = get_binary(Math.floor(Math.random() * 256));
+    //     let targetSmiley = new Smiley(num)
+    //     return targetSmiley
+    // }
 
-    function assignTargetSmiley () {
-        target = createTargetSmiley()
-        // dispatch action to assign target smiley globally
+    // function assignTargetSmiley () {
+    //     target = createTargetSmiley()
+    //     // dispatch action to assign target smiley globally
+    // }
+
+    function test () {
+        let testSmiley = Smiley("00000000")
+        return testSmiley
     }
 
     return (
         <div className="target">
-            // target smiley from app state (img)
+           {test()}
         </div>
     )
 }

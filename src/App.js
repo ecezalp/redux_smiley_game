@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Welcome from "./components/displays/welcome"
-import SmileyGrid from "./components/displays/smileyGrid"
+// import Welcome from "./components/displays/welcome"
+// import SmileyGrid from "./components/displays/smileyGrid"
+import TargetSmiley from './components/displays/targetSmiley'
+// import Test from './components/displays/test'
 
 // // create target smiley
 // function createTargetSmiley () {
@@ -84,10 +86,10 @@ import SmileyGrid from "./components/displays/smileyGrid"
 
 class App extends Component {
   render() {
+
     return (
       <div className="app">
-        <Welcome />
-        <SmileyGrid />
+        <TargetSmiley />
       </div> 
     );
   }

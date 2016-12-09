@@ -14,10 +14,8 @@ class SmileyGrid extends React.Component {
     }
     
     allSmileys () {  
-        debugger   
-        let smileys =  this.props.order.map(index => <Smiley stringId={index}/>)
         return (
-            smileys
+            this.props.order.map(index => <Smiley stringId={index}/>)
         )
     }   
 
