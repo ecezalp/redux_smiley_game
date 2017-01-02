@@ -1,17 +1,21 @@
 import React from 'react'
-import Alert from '../classes/alert'
 
 export default function Welcome () {
 
-    const welcomeMessagesArray = ["WELCOME TO OUR GAME", "TRY TO FIND THE TARGET SMILEY FROM THE GRID BY CLICKING", "YOU CAN APPLY A FILTER ONCE AT THE START OF THE GAME"]
+    // const welcomeMessagesArray = []
  
-    function messageIterator () {
-        welcomeMessagesArray.map(welcome => <Alert message={welcome}/>)
-    }
+    // function messageIterator () {
+    //     debugger
+    //     welcomeMessagesArray.map(welcome => welcome)
+    // };
 
+    
     return (
         <div className="welcome">
-            {messageIterator()}
+            <br />
+            FIND THE TARGET SMILEY FROM THE GRID!
+            <br />
+            APPLY A FILTER AT THE START OF THE GAME
         </div>
     )
 }

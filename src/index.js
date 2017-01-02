@@ -9,11 +9,13 @@ import { createStore, applyMiddleware } from 'redux';
 import ReduxPromise from 'redux-promise';
 import rootReducer from './reducers';
 
-import { createOrderArray } from './actions'
+import * as actions from './actions';
 
 const store = createStore(rootReducer, applyMiddleware(ReduxPromise))
 
-store.dispatch(createOrderArray())
+store.dispatch(actions.createOrderArray())
+store.dispatch(actions.createTargetSmiley())
+store.dispatch(actions.createClickedArray())
 
 ReactDOM.render(
     <Provider store={store} >

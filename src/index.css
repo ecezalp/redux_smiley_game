@@ -14,7 +14,7 @@ div#root {
 div.default {
   width: 64px;
   height: 64px;
-  margin: 12px;
+  margin: 3px;
   display: inline-block;
   background-color: green;
 }
@@ -37,4 +37,28 @@ div.default.opened {
 }
 div.default.opened img {
   opacity: 1;
+}
+
+.target-smiley-displayer {
+  margin: 0px 0px 20px 0px;
+  float: left;
+}
+
+.welcome {
+  margin: 0px 30px 20px 0px;
+  float: left;
+}
+
+.button {
+  margin: 10px 5px 20px 0px;
+  display: inline-block
+}
+
+.buttons {
+  margin: 10px 0px 0px 50px;
+  float: left
+}
+
+.win {
+  float: left
 }

@@ -20,7 +20,7 @@ export default class Alert extends React.Component {
 
      render () {
          return (
-             <h1> TEST </h1>
+             <Alert message={"222"} />
          )
      }   
 }
