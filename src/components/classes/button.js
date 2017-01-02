@@ -1,13 +1,10 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
 
-export default function Button (props) {
-
-    function clickHandler () {
-       // dispatch filtering action with passed prop       
-    }
-
+export default function FilterButton ({filterFunc, name, index, buttonState}) {
     return (
-        <button onClick={()=> clickHandler()}> {props.name} </button>
+        <div className="button">
+            <Button bsStyle='info' disabled={buttonState} onClick={() => filterFunc(index)}> {name} </Button>
+        </div>
     )
 }

@@ -37,5 +37,4 @@ export function numConverter(x, y) {
   }
 
 export const buttonHelper = ["Color", "Eyebrows", "Glasses", "Moustache", "Beard", "Hat", "Tongue", "Piercing"]
-
 // export const buttonHelperTurkish = ["Renk", "Kaş", "Gözlük", "Bıyık", "Sakal", "Şapka", "Dil", "Küpe"]
